@@ -126,7 +126,7 @@ Once the script execution finishes, try to ping all the machines via ansible:
 ansible linux -m ping && ansible windows -m win_ping
 ```
 
-![Successful ping](/images/successful-ping.png)
+![Successful ping](./images/successful-ping.png)
 
 NOTE: Windows modules in Ansible must begin with `win_` prefix (else it will throw an error)
 
@@ -225,13 +225,13 @@ In the following snippet, the play targets `hosts: windows` and uses `become` wi
 
 Running the playbook shows a clear breakdown of each task for both Ubuntu and CentOS hosts. Tasks such as installing EPEL and Nginx were correctly applied or skipped depending on the distribution, and you can see changes reflected in the status lines (e.g., `changed` for tasks that updated the system, `ok` for tasks that were already in the desired state, and `skipping` for tasks not relevant to a particular OS). Finally, the play recap confirms successful execution across both hosts, and the `curl` commands demonstrate that each server correctly serves the boilerplate HTML page. This verifies that Nginx is running as intended and that the customized content has been properly deployed to both Ubuntu and CentOS.
 
-![Linux Playbook](/images/linux-playbook.png)
-![Linux Nginx result](/images/linux-nginx.png)
+![Linux Playbook](./images/linux-playbook.png)
+![Linux Nginx result](./images/linux-nginx.png)
 
 Same exact result is expected when running the playbook against Windows Server. As shown below, browsing to the server displays the HTML boilerplate page, verifying that IIS is properly installed and serving content.
 
-![Windows Playbook](/images/windows-playbook.png)
-![Windows IIS result](/images/windows-iis.png)
+![Windows Playbook](./images/windows-playbook.png)
+![Windows IIS result](./images/windows-iis.png)
 
 # Conclusions
 
