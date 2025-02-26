@@ -5,15 +5,11 @@
 1. [Introduction](#introduction)  
    1.1. [Overview of Ansible](#overview-of-ansible)  
    1.2. [Benefits](#benefits)  
-
 2. [Prerequisites](#prerequisites)  
-
 3. [Ansible Configurations](#ansible-configurations)  
    3.1. [SSH Connectivity Between Nodes](#ssh-connectivity-between-nodes)  
    3.2. [Ansible Playbooks](#ansible-playbooks)  
-
 4. [Results](#results)  
-
 5. [Conclusions](#conclusions)  
    5.1. [Key Considerations](#key-considerations)
 
