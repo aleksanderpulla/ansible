@@ -53,7 +53,7 @@ Before proceeding, make sure that Ansible is properly installed on the control p
 ansible --version
 ```
 
-![Ansible version](/Automated Web Server Deployment/images/ansible-version.png)
+![Ansible version](./images/ansible-version.png)
 
 We start with the configuration of `ansible.cfg` file. 
 In this file, `inventory = hosts` tells Ansible to use a file named `hosts` (located in your project directory) as its default inventory. This way, you do not need to specify the `-i hosts` option every time you run Ansible commands. The line `host_key_checking = False` disables SSH host key checking, which is convenient for development or testing when you frequently connect to new or temporary hosts. In production environments, however, it is typically safer to leave host key checking enabled to detect any unauthorized changes to a host’s fingerprint and reduce security risks.
